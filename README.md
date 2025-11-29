@@ -50,7 +50,7 @@ Bu proje, prototipleme aşamasından sonra kalıcı bir giyilebilir ürüne dön
 | Görünüm | Açıklama |
 | :---: | :--- |
 | ![Nihai Ürün](images/saat_final.jpg) | Saatin kordonlu ve kutulanmış son hali. |
-| ![İç Devreler](images/program_gonderim.jpg) | Lehimleme ve kompakt kablolama detaylarını gösteren iç görünüm. |
+| ![İç Devreler](images/program_gonderim.jpg) | Gerekli kodların arduinoya gönderimi ve iç görünüm. |
 | ![Bağlantı Beklemesi](images/baglanti_bekleniyor.jpg) | Bağlantı istemi görüntüsü. |
 | ![Arayüz Görüntüsü](images/giris.jpg) | Saatin OLED ekranındaki arayüzün ve bağlantı durumunun bir görüntüsü. |
 | ![Şematik](images/proje_semasi.jpg) | Bileşenlerin birbirine nasıl bağlandığını gösteren genel şema. |
