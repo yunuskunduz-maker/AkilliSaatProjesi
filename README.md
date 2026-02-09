@@ -1,58 +1,68 @@
-# Maker Akıllı Saat Projesi (Arduino Pro Mini & HC-05)
+# Maker Smart Watch Project (Arduino Pro Mini & HC-05)
 
-Bu proje, **Arduino Pro Mini** ve **HC-05 Bluetooth modülü** kullanılarak sıfırdan tasarlanmış, **kompakt ve taşınabilir** bir akıllı saat prototipidir. Ana odak noktası, tüm bileşenlerin minimum yer kaplaması için yeniden düzenlenmesi ve bir mobil uygulama ile iki yönlü iletişim kurabilmesidir.
+This project is a **compact and portable** smart watch prototype designed from scratch using an **Arduino Pro Mini** and an **HC-05 Bluetooth module**. The primary focus is on rearranging all components to occupy minimum space and establishing two-way communication with a mobile application.
 
-## Temel Özellikler
+## Key Features
 
-| Özellik | Açıklama |
+| Feature | Description |
 | :--- | :--- |
-| **Mobil Uygulama İletişimi** | Özel bir mobil uygulamaya (Android/iOS) bağlanabilme yeteneği. |
-| **Uygulamadan Mesaj Gönderme** | Uygulama üzerinden saate anlık mesajlar veya bildirimler gönderebilme. |
-| **Bağlantı Durumu Gösterimi** | Bluetooth bağlantısının ne zaman başladığına dair anlık geri bildirim ile kullanıcıya bilgi verme. |
-| **Kompakt ve Giyilebilir Tasarım** | Lehimleme ile bileşenlerin boyutları minimize edilerek giyilebilir hale getirilmiş tasarım. |
+| **Mobile App Communication** | Ability to connect to a custom mobile application (Android/iOS). |
+| **Messaging via App** | Ability to send instant messages or notifications to the watch via the application. |
+| **Connection Status Display** | Providing real-time feedback to the user on when the Bluetooth connection is established. |
+| **Compact and Wearable Design** | Minimized component sizes through direct soldering to make the design wearable. |
 
-## Donanım ve Bileşen Listesi
+## Hardware and Component List
 
-Projede, yer kazanmak ve giyilebilirlik sağlamak amacıyla tüm bileşenlerin jumper pinleri sökülmüş ve doğrudan kablolarla lehimlenmiştir.
+In this project, jumper pins were removed and components were directly soldered using wires to save space and ensure wearability.
 
-| Bileşen | Model/Detay | Kullanım Amacı |
+| Component | Model/Detail | Purpose |
 | :--- | :--- | :--- |
-| **Mikrodenetleyici** | **Arduino Pro Mini** (3.3V / 5V) | Projenin ana işlem birimi. |
-| **Ekran** | **OLED Ekran** | Saat arayüzünü, bildirimleri ve bağlantı durumunu gösterme. |
-| **Bluetooth Modülü** | **HC-05** | Mobil uygulama ile seri iletişim kurma. |
-| **Güç Kaynağı** | **250mAh LiPo Pil** | Saatin güç kaynağı. |
-| **Şarj Devresi** | **Type-C Pil Şarj Devre Soketi** | LiPo pilin kolayca şarj edilmesini sağlama. |
-| **Programlama** | FDTI USB-TTL Dönüştürücü | (Sadece kod yükleme aşamasında kullanıldı, nihai üründe yer almaz.) |
+| **Microcontroller** | **Arduino Pro Mini** (3.3V / 5V) | The main processing unit of the project. |
+| **Display** | **OLED Display** | To display the watch interface, notifications, and connection status. |
+| **Bluetooth Module** | **HC-05** | To establish serial communication with the mobile application. |
+| **Power Source** | **250mAh LiPo Battery** | The power supply for the watch. |
+| **Charging Circuit** | **Type-C Battery Charging Module** | To enable easy charging of the LiPo battery. |
+| **Programming** | FTDI USB-TTL Converter | (Used only during the code upload phase, not included in the final product). |
 
-## Montaj ve Yapı Süreci Notları
 
-Bu proje, prototipleme aşamasından sonra kalıcı bir giyilebilir ürüne dönüştürülmüştür. Bu süreç, projenin en kritik ve yer tasarrufu sağlayan adımlarını içerir:
 
-1.  **Prototipleme:** İlk olarak tüm bileşenler **jumper kablolar** kullanılarak bağlanmış ve kodun hatasız çalıştığından emin olunmuştur.
-2.  **Yer Tasarrufu:** Çalışan kod yüklendikten sonra, tüm bileşenlerin (özellikle HC-05, Oled Ekran ve Arduino Pro Mini) üzerindeki **gereksiz jumper pinler lehim makinesi yardımıyla sökülmüştür.**
-3.  **Kompakt Lehimleme:** Gerekli tüm bağlantılar, kısa kesilmiş ve uçları açılmış ince kablolar kullanılarak, **doğrudan lehimleme** yoluyla yapılmış ve böylece maksimum alan tasarrufu sağlanmıştır.
-4.  **Kasa ve Giyilebilirlik:** Lehimlenen devre, özel olarak hazırlanan bir **kutuya** yerleştirilmiş ve bir **saat kordonu** eklenerek nihai giyilebilir forma ulaştırılmıştır.
+[Image of Arduino Pro Mini pinout diagram]
 
-## Yazılım ve Dosya Yapısı
 
-### Kodlama Ortamı
-* **Geliştirme Ortamı:** Arduino IDE
-* **Programlama Dili:** C++
+## Assembly and Construction Process Notes
 
-### Depo İçeriği
-| Dosya Yolu | Açıklama |
+This project was transformed from a prototyping stage into a permanent wearable product. This process involves the most critical and space-saving steps of the project:
+
+1.  **Prototyping:** Initially, all components were connected using **jumper wires** to ensure the code worked flawlessly.
+2.  **Space Saving:** Once the working code was uploaded, **unnecessary jumper pins were removed** from all components (especially the HC-05, OLED Display, and Arduino Pro Mini) using a soldering iron.
+3.  **Compact Soldering:** All necessary connections were made through **direct soldering** using short, stripped thin wires, achieving maximum space efficiency.
+4.  **Case and Wearability:** The soldered circuit was placed into a specially prepared **case**, and a **watch strap** was added to reach its final wearable form.
+
+
+
+## Software and Folder Structure
+
+### Coding Environment
+* **Development Environment:** Arduino IDE
+* **Programming Language:** C++
+
+### Repository Content
+| File Path | Description |
 | :--- | :--- |
-| `https://maker.robotistan.com/wp-content/uploads/2025/06/akilli_saat-apk.zip` | Akıllı saat bağlantısı için uygulama. |
-| `images/` | Projenin yapım aşaması ve son haline ait fotoğraflar. |
+| `https://maker.robotistan.com/wp-content/uploads/2025/06/akilli_saat-apk.zip` | Application for the smart watch connection. |
+| `images/` | Photos of the project's construction phases and final version. |
 
-## Proje Görselleri
+## Project Visuals
 
-| Görünüm | Açıklama |
+| View | Description |
 | :---: | :--- |
-| ![Nihai Ürün](images/saat_final.jpg) | Saatin kordonlu ve kutulanmış son hali. |
-| ![İç Devreler](images/program_gonderim.jpg) | Gerekli kodların arduinoya gönderimi ve iç görünüm. |
-| ![Bağlantı Beklemesi](images/baglanti_bekleniyor.jpg) | Bağlantı istemi görüntüsü. |
-| ![Arayüz Görüntüsü](images/giris.jpg) | Saatin OLED ekranındaki arayüzün ve bağlantı durumunun bir görüntüsü. |
-| ![Şematik](images/proje_semasi.jpg) | Bileşenlerin birbirine nasıl bağlandığını gösteren genel şema. |
+| ![Final Product](images/saat_final.jpg) | The final version of the watch with the strap and case. |
+| ![Internal Circuits](images/program_gonderim.jpg) | Internal view and the process of uploading code to the Arduino. |
+| ![Waiting for Connection](images/baglanti_bekleniyor.jpg) | Display showing the connection request. |
+| ![Interface View](images/giris.jpg) | View of the OLED display interface and connection status. |
+| ![Schematic](images/proje_semasi.jpg) | General schematic showing how components are interconnected. |
 
 ---
+
+**Developer:** Yunus Kunduz  
+**YouTube:** [CozumLab](https://www.youtube.com/@CozumLabTR)
