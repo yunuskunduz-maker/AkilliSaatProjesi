@@ -49,7 +49,7 @@ This project was transformed from a prototyping stage into a permanent wearable 
 ### Repository Content
 | File Path | Description |
 | :--- | :--- |
-| `https://maker.robotistan.com/wp-content/uploads/2025/06/akilli_saat-apk.zip` | Application for the smart watch connection. |
+| `akilli_saat-apk/` | Application for the smart watch connection. |
 | `images/` | Photos of the project's construction phases and final version. |
 
 ## Project Visuals
